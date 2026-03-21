@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef's Knife — Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, sans-serif; background: #f5f5f4; padding: 48px 32px; color: #1c1917; }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    p { color: #78716c; margin-bottom: 48px; font-size: 15px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px; }
+    .card { background: white; border-radius: 16px; padding: 40px 32px 32px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; gap: 24px; }
+    .card h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #a8a29e; }
+    .sizes { display: flex; align-items: flex-end; gap: 20px; }
+    .size-label { font-size: 11px; color: #a8a29e; text-align: center; margin-top: 6px; }
+    .size-wrap { display: flex; flex-direction: column; align-items: center; }
+    .on-dark { background: #064e3b; border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 12px; width: 100%; justify-content: center; }
+    .on-dark span { color: white; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+    .on-light { background: #f5f5f4; border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 12px; width: 100%; justify-content: center; }
+    .on-light span { color: #064e3b; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+    .previews { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <h1>Chef's Knife — Classic Simple</h1>
+  <p>Clean silhouette only — handle, bolster, blade. No detail noise.</p>
+
+  <div class="grid">
+
+    <!-- Horizontal -->
+    <div class="card">
+      <h2>Horizontal</h2>
+      <div class="sizes">
+        <div class="size-wrap">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="H1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#H1)"/>
+            <!-- Handle -->
+            <rect x="6" y="36" width="22" height="10" rx="5" fill="white" opacity="0.9"/>
+            <!-- Bolster -->
+            <rect x="28" y="31" width="5" height="20" rx="2.5" fill="white"/>
+            <!-- Blade: spine flat, belly curves up to tip -->
+            <path d="M33,32 L70,36 L71,38 Q54,52 33,50 Z" fill="white"/>
+          </svg>
+          <div class="size-label">80px</div>
+        </div>
+        <div class="size-wrap">
+          <svg width="48" height="48" viewBox="0 0 80 80" fill="none">
+            <defs><linearGradient id="H1b" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#H1b)"/>
+            <rect x="6" y="36" width="22" height="10" rx="5" fill="white" opacity="0.9"/>
+            <rect x="28" y="31" width="5" height="20" rx="2.5" fill="white"/>
+            <path d="M33,32 L70,36 L71,38 Q54,52 33,50 Z" fill="white"/>
+          </svg>
+          <div class="size-label">48px</div>
+        </div>
+        <div class="size-wrap">
+          <svg width="24" height="24" viewBox="0 0 80 80" fill="none">
+            <defs><linearGradient id="H1c" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#H1c)"/>
+            <rect x="6" y="36" width="22" height="10" rx="5" fill="white" opacity="0.9"/>
+            <rect x="28" y="31" width="5" height="20" rx="2.5" fill="white"/>
+            <path d="M33,32 L70,36 L71,38 Q54,52 33,50 Z" fill="white"/>
+          </svg>
+          <div class="size-label">24px</div>
+        </div>
+      </div>
+      <div class="previews">
+        <div class="on-dark">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none"><defs><linearGradient id="H1d" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs><rect width="80" height="80" rx="20" fill="url(#H1d)"/><rect x="6" y="36" width="22" height="10" rx="5" fill="white" opacity="0.9"/><rect x="28" y="31" width="5" height="20" rx="2.5" fill="white"/><path d="M33,32 L70,36 L71,38 Q54,52 33,50 Z" fill="white"/></svg>
+          <span>Kitchen Manager</span>
+        </div>
+        <div class="on-light">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none"><defs><linearGradient id="H1e" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#047857"/><stop offset="1" stop-color="#059669"/></linearGradient></defs><rect width="80" height="80" rx="20" fill="url(#H1e)"/><rect x="6" y="36" width="22" height="10" rx="5" fill="white" opacity="0.9"/><rect x="28" y="31" width="5" height="20" rx="2.5" fill="white"/><path d="M33,32 L70,36 L71,38 Q54,52 33,50 Z" fill="white"/></svg>
+          <span>Kitchen Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagonal -->
+    <div class="card">
+      <h2>Diagonal</h2>
+      <div class="sizes">
+        <div class="size-wrap">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="D1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#064e3b"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#D1)"/>
+            <!-- Handle -->
+            <rect x="8" y="54" width="22" height="10" rx="5" fill="white" opacity="0.9" transform="rotate(-40 19 59)"/>
+            <!-- Bolster -->
+            <rect x="27" y="47" width="5" height="16" rx="2.5" fill="white" transform="rotate(-40 29 55)"/>
+            <!-- Blade -->
+            <path d="M30,46 L64,12 L66,15 Q50,36 34,58 Z" fill="white"/>
+          </svg>
+          <div class="size-label">80px</div>
+        </div>
+        <div class="size-wrap">
+          <svg width="48" height="48" viewBox="0 0 80 80" fill="none">
+            <defs><linearGradient id="D1b" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#064e3b"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#D1b)"/>
+            <rect x="8" y="54" width="22" height="10" rx="5" fill="white" opacity="0.9" transform="rotate(-40 19 59)"/>
+            <rect x="27" y="47" width="5" height="16" rx="2.5" fill="white" transform="rotate(-40 29 55)"/>
+            <path d="M30,46 L64,12 L66,15 Q50,36 34,58 Z" fill="white"/>
+          </svg>
+          <div class="size-label">48px</div>
+        </div>
+        <div class="size-wrap">
+          <svg width="24" height="24" viewBox="0 0 80 80" fill="none">
+            <defs><linearGradient id="D1c" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#064e3b"/></linearGradient></defs>
+            <rect width="80" height="80" rx="20" fill="url(#D1c)"/>
+            <rect x="8" y="54" width="22" height="10" rx="5" fill="white" opacity="0.9" transform="rotate(-40 19 59)"/>
+            <rect x="27" y="47" width="5" height="16" rx="2.5" fill="white" transform="rotate(-40 29 55)"/>
+            <path d="M30,46 L64,12 L66,15 Q50,36 34,58 Z" fill="white"/>
+          </svg>
+          <div class="size-label">24px</div>
+        </div>
+      </div>
+      <div class="previews">
+        <div class="on-dark">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none"><defs><linearGradient id="D1d" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#064e3b"/></linearGradient></defs><rect width="80" height="80" rx="20" fill="url(#D1d)"/><rect x="8" y="54" width="22" height="10" rx="5" fill="white" opacity="0.9" transform="rotate(-40 19 59)"/><rect x="27" y="47" width="5" height="16" rx="2.5" fill="white" transform="rotate(-40 29 55)"/><path d="M30,46 L64,12 L66,15 Q50,36 34,58 Z" fill="white"/></svg>
+          <span>Kitchen Manager</span>
+        </div>
+        <div class="on-light">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none"><defs><linearGradient id="D1e" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#064e3b"/></linearGradient></defs><rect width="80" height="80" rx="20" fill="url(#D1e)"/><rect x="8" y="54" width="22" height="10" rx="5" fill="white" opacity="0.9" transform="rotate(-40 19 59)"/><rect x="27" y="47" width="5" height="16" rx="2.5" fill="white" transform="rotate(-40 29 55)"/><path d="M30,46 L64,12 L66,15 Q50,36 34,58 Z" fill="white"/></svg>
+          <span>Kitchen Manager</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
