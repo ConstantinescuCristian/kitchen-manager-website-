@@ -51,9 +51,7 @@
   </script>
 
   <link rel="stylesheet" href="/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Inter is referenced via system font stack below (self-hosted for GDPR compliance) -->
   <style>
     html { scroll-behavior: smooth; }
     .gradient-hero {
@@ -1960,7 +1958,11 @@
     const div = document.createElement('div');
     div.className = 'flex gap-2' + (isUser ? ' justify-end' : '');
     if (isUser) {
-      div.innerHTML = `<div class="rounded-2xl rounded-tr-sm px-3 py-2 text-sm text-white max-w-[85%]" style="background:linear-gradient(135deg,#059669,#047857)">${text}</div>`;
+      const bubble = document.createElement('div');
+      bubble.className = 'rounded-2xl rounded-tr-sm px-3 py-2 text-sm text-white max-w-[85%]';
+      bubble.style.background = 'linear-gradient(135deg,#059669,#047857)';
+      bubble.textContent = text;
+      div.appendChild(bubble);
     } else {
       div.innerHTML = `
         <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background:linear-gradient(135deg,#059669,#047857)">KH</div>
